@@ -1,0 +1,22 @@
+Github legfontosabb parancsai
+Local:
+git config --global user.name "Sajátnév" - beállítja a felhasználó nevét.
+git config --global user.email "sajat@gmail.com" - beállítja a felhasználó e-mail címét.
+git clone (repository url)		 - távoli repository letöltése helyi gépre
+git rm (file)				 - fájl eltávolítása a repository-ból.
+git mv (regifajlnev) (ujfajlnev)	 - fájl átnevezése
+git init			 	 - git tároló inicializálás, létrehoz egy üres tárolót a helyi mappában
+git status 		  		 - aktuális mappa státuszának lekérdezése
+git add (fajlnev) 	  		 - fájl hozzáadása az indexhez (. karakter használatával az összes fájlt hozzáadja)
+git commit -m "üzenet"	  		 - commit létrehozása üzenettel
+git log			  		 - a projekt összes commit-jét megjeleníti
+git checkout main	  		 - korábbi commitra való visszaállítás
+git reset (fajlnev)	  		 - módosítások visszaállítása az indexből
+git checkout -- (fajlnev) 		 - véglegesen visszaállítja a fájlt
+
+Remote:
+git remote add (nev) (url)		 - távoli repository hozzáadása
+git remote -v				 - a távoli repository-k listázása
+git pull (remote) (branch)		 - letölti és egyesíti a távoli branch változtatásait a helyi branch-el 	
+git push (remote) (branch)		 - feltölti a helyi branch változtatásait a távoli repository-ba
+git status				 - a repository aktuális állapotának megtekintése (staged, unstaged, untracked fájlok)	
